@@ -11,6 +11,7 @@ class App < Sinatra::Base
   get "/hello/:name" do
     @user_name = params[:name]
     "Hello #{@user_name}!"
+    "Hello params[:name"
   end
 
   get '/medicines/:id' do
